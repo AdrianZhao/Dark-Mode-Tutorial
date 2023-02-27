@@ -8,9 +8,11 @@ On most devices/operating systems, users can enable dark mode at a system level.
 
 ### Design Considertions
 
-People always said implementing dark mode is easier than designing one. It is very important that you will take care of colors, shadows, dimmings of the iamge, balance of contrast and color palettes. But this is a small tutorial, we will make a simple one.
+People always said implementing dark mode is easier than designing one. It is very important that you will take care of colors, shadows, dimmings of the iamge, balance of contrast and color palettes. But this is a small tutorial, we will make a simple one. I belive you already familiar with HTML and CSS, so I won't teach a lot about HTML or CSS. Just very basic stuff.
 
 ### Simple Dark Mode Example in HTML
+
+What you have to do is creating a simple page with a simple button. Don't forget to put the button and any paragraph in the container.
 
 ```html
 <!DOCTYPE html>
@@ -43,6 +45,8 @@ People always said implementing dark mode is easier than designing one. It is ve
 ```
 
 ### Simple Dark Mode Example in CSS
+
+In css you have to address the button and the backgroud color of the page. If you can, address the button color and the letters on the button, as well as any paragraph in the webpage.
 
 ```css
 
@@ -92,6 +96,8 @@ button {
 ```
 
 ### Simple Dark Mode Example in JavaScript
+
+It is very simple in JS. The only thing you need to do is add a ```addEventListener``` and a ```document.querySelector``` to make sure the JS could run the code. The ```addEventListener('click', () => {})``` is basicly used to track you mouse click, after you click, will run the arrow function after the click. In the function, there is a ```.classList.toggle```, which is used as a toggle. Whenever you click it, it will run and determaine which mode are you in at the moment, and choose the right color theme to perform. The ```.classList.contains``` is to check if it is already in 'daymode' , if is, then gose into 'nightmode', if not, gose 'daymode'. The ```.innerText``` is used to change the text in the button.
 
 ```javascript
 const btn = document.querySelector('button');
