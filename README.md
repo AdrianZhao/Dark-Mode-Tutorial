@@ -13,6 +13,22 @@ People always said implementing dark mode is easier than designing one. It is ve
 ### Simple Dark Mode Example in HTML
 
 ```html
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initinal-scale=1">
+    <meta name="author" content="Yuhan Zhao">
+    <meta name="discription" content="My Web Page">
+    <meta name="keywords" content="html, css, web, web development, seo">
+    <title>Simple Darkmode</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/style/index.css" media="all">
+    <script src="./assets/scripts/index.js" defer></script>
+  </head>
   <body class="body">
     <main>
       <div class="container">
@@ -23,11 +39,37 @@ People always said implementing dark mode is easier than designing one. It is ve
       </div>
     </main>
   </body>
+</html>
 ```
 
 ### Simple Dark Mode Example in CSS
 
 ```css
+
+html {
+  font-family: Sofia Sans, sans-serif;
+  transition: color 0.25s, ease-in-out;
+}
+.body {
+  width: 100%;
+  height: 100vh;
+  background-color: #262223;
+}
+.container {
+  width: min(100% - 30px, 1080px);
+  margin-inline: auto;
+}
+.body.daymode {
+  background-color: #ddc6b6;
+}
+h2 {
+  margin-top: 50px;
+  color: #ddc6b6;
+  transition: color 0.5s ease-in-out;
+}
+.body.daymode h2 {
+  color: #262223;
+}
 button {
   margin-top: 40px;
   background-color: #ddc6b6;
