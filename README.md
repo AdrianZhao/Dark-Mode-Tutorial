@@ -49,7 +49,6 @@ What you have to do is creating a simple page with a simple button. Don't forget
 In css you have to address the button and the backgroud color of the page. If you can, address the button color and the letters on the button, as well as any paragraph in the webpage. We will set the body background color to some light color as a day mode, and we'll use some darker color as night mode. Then we will make the button looks like a button. And set the color for both day mode and night mode of the button.
 
 ```css
-
 html {
   font-family: Sofia Sans, sans-serif;
   transition: color 0.25s, ease-in-out;
