@@ -6,6 +6,10 @@ There are many potential benefits of dark mode, like ```saving battery life``` a
 
 On most devices/operating systems, users can enable dark mode at a system level. This usually works system-wide, including default and third-party apps. 
 
+### Demo
+
+Click [here](https://adrianzhao.github.io/Dark-Mode-Tutorial/) to test the application.
+
 ### Design Considertions
 
 People always said implementing dark mode is easier than designing one. It is very important that you will take care of colors, shadows, dimmings of the iamge, balance of contrast and color palettes. But this is a small tutorial, we will make a simple one. 
