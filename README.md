@@ -8,11 +8,11 @@ On most devices/operating systems, users can enable dark mode at a system level.
 
 ### Design Considertions
 
-People always said implementing dark mode is easier than designing one. It is very important that you will take care of colors, shadows, dimmings of the iamge, balance of contrast and color palettes. But this is a small tutorial, we will make a simple one. I belive you already familiar with HTML and CSS, so I won't teach a lot about HTML or CSS. Just very basic stuff.
+People always said implementing dark mode is easier than designing one. It is very important that you will take care of colors, shadows, dimmings of the iamge, balance of contrast and color palettes. But this is a small tutorial, we will make a simple one. 
 
 ### Simple Dark Mode Example in HTML
 
-What you have to do is creating a simple page with a simple button. Don't forget to put the button and any paragraph in the container.
+What you have to do is creating a simple page with a simple button. Don't forget to put the button and any paragraph in the container. Let's put the button in to a section, to organize our code. We add a H2 to have more content to show the dark mode.
 
 ```html
 <!DOCTYPE html>
@@ -46,7 +46,7 @@ What you have to do is creating a simple page with a simple button. Don't forget
 
 ### Simple Dark Mode Example in CSS
 
-In css you have to address the button and the backgroud color of the page. If you can, address the button color and the letters on the button, as well as any paragraph in the webpage.
+In css you have to address the button and the backgroud color of the page. If you can, address the button color and the letters on the button, as well as any paragraph in the webpage. We will set the body background color to some light color as a day mode, and we'll use some darker color as night mode. Then we will make the button looks like a button. And set the color for both day mode and night mode of the button.
 
 ```css
 
